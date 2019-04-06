@@ -11,15 +11,15 @@ public class Main {
     /** ファイル一行の最大文字数 */
     private final static Integer MAX_LENGTH = 256;
     /** 1チームの最大コスト */
-    private final static Integer MAX_COST = 100;
+    private final static Integer MAX_COST = 550;
     /** 野手データ最大人数 */
     private final static Integer MAX_BUTTER_NUM = 100;
     /** 投手データ最大人数 */
     private final static Integer MAX_PITCHER_NUM = 100;
     /** 野手データファイル名 */
-    private final static String BUTTER_FILE_NAME = "File1";
+    private final static String BUTTER_FILE_NAME = "Batter_Open.dat";
     /** 投手データファイル名 */
-    private final static String PITCHER_FILE_NAME = "File2";
+    private final static String PITCHER_FILE_NAME = "Pitcher_Open.dat";
 
     /**
      * 野手データ
@@ -206,7 +206,37 @@ public class Main {
 
         }
 
+        if( isCostOver() )
+        {
+            System.err.println("cost over");
+            return;
+        }
+
         return;
+    }
+
+    /*
+     * コストオーバーチェック
+     */
+    public Boolean isCostOver()
+    {
+        int sum = 0;
+
+        for( int i = 0 ; i < 9 ; i++ )
+        {
+            sum += selectedButterPlayers.get(i).cost;
+        }
+
+        sum += selectedPitcherPlayer.cost;
+
+        if( sum > MAX_COST )
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     /**
