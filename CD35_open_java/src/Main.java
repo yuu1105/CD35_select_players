@@ -8,8 +8,6 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Main {
-    /** ファイル一行の最大文字数 */
-    private final static Integer MAX_LENGTH = 256;
     /** 1チームの最大コスト */
     private final static Integer MAX_COST = 550;
     /** 野手データ最大人数 */
@@ -36,9 +34,7 @@ public class Main {
             niruidaritsu =  Float.parseFloat(datas[4]);
             sanruidaritsu =  Float.parseFloat(datas[5]);
             honruidaritsu =  Float.parseFloat(datas[6]);
-            sikyuuritsu =  Float.parseFloat(datas[7]);
-            sanshinritsu =  Float.parseFloat(datas[8]);
-            cost = Integer.parseInt(datas[9]);
+            cost = Integer.parseInt(datas[7]);
 
         }
         public Integer id;             // ID
@@ -48,8 +44,6 @@ public class Main {
         public Float niruidaritsu;     // 二塁打率
         public Float sanruidaritsu;    // 三塁打率
         public Float honruidaritsu;    // 本塁打率
-        public Float sikyuuritsu;      // 四球率
-        public Float sanshinritsu;     // 三振率
         public Integer cost;           // コスト
     }
 
@@ -65,18 +59,12 @@ public class Main {
             name = datas[1];
             bougyoritsu = Float.parseFloat(datas[2]);
             yoshikyuuritsu = Float.parseFloat(datas[3]);;
-            datsusansinritsu = Float.parseFloat(datas[4]);;
-            hiandaritsu = Float.parseFloat(datas[5]);;
-            hihonruidaritsu = Float.parseFloat(datas[6]);;
-            cost = Integer.parseInt(datas[7]);
+            cost = Integer.parseInt(datas[4]);
         }
         public Integer id;           // ID
         public String name;          // 氏名
         public Float bougyoritsu;    // 防御率
         public Float yoshikyuuritsu;   // 与四球率
-        public Float datsusansinritsu; // 奪三振率
-        public Float hiandaritsu;      // 被安打率
-        public Float hihonruidaritsu;  // 被本塁打率;
         public Integer cost;         // コスト
     }
 
@@ -242,7 +230,7 @@ public class Main {
 
         for( ButterData d : butterData )
         {
-            System.out.printf("%d,%s,%f,%f,%f,%f,%f,%f,%f,%d\n",
+            System.out.printf("%d,%s,%f,%f,%f,%f,%f,%d\n",
                     d.id,
                     d.name,
                     d.daritsu,
@@ -250,22 +238,17 @@ public class Main {
                     d.niruidaritsu,
                     d.sanruidaritsu,
                     d.honruidaritsu,
-                    d.sikyuuritsu,
-                    d.sanshinritsu,
                     d.cost);
         }
 
         System.out.printf("#######PITCHER\n");
         for( PitcherData d : pitcherData )
         {
-            System.out.printf("%d,%s,%f,%f,%f,%f,%f,%d\n",
+            System.out.printf("%d,%s,%f,%f,%d\n",
                     d.id,
                     d.name,
                     d.bougyoritsu,
                     d.yoshikyuuritsu,
-                    d.datsusansinritsu,
-                    d.hiandaritsu,
-                    d.hihonruidaritsu,
                     d.cost);
         }
     }

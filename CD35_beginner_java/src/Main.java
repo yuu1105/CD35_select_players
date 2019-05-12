@@ -8,8 +8,6 @@ import java.util.Comparator;
 import java.util.List;
 
 public class Main {
-    /** ファイル一行の最大文字数 */
-    private final static Integer MAX_LENGTH = 256;
     /** 1チームの最大コスト */
     private final static Integer MAX_COST = 550;
     /** 野手データ最大人数 */

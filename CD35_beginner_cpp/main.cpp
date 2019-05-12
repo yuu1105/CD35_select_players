@@ -423,7 +423,7 @@ int main(void)
     {
         return 1;
     }
-    printf("#表示\n");
+
     obj.displayTeam();
 
     return 0;
