@@ -83,7 +83,7 @@ public class Main {
                     return o1.cost.compareTo(o2.cost);
                 }
             });
-            selectedButterPlayers = butterData.subList(0,8);
+            selectedButterPlayers = butterData.subList(0,9);
         }
 
         // 投手
