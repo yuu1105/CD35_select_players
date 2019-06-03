@@ -427,7 +427,7 @@ int main(void)
     {
         return 1;
     }
-    obj.debugPrint();
+    //obj.debugPrint();
 
     if(!obj.selectPlayers())
     {
