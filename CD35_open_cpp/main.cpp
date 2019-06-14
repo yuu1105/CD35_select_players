@@ -12,9 +12,9 @@
 // 1チームの最大コスト
 #define MAX_COST (550u)
 // 野手データ最大人数
-#define MAX_BUTTER_NUM (100u)
+#define MAX_BUTTER_NUM (500u)
 // 投手データ最大人数
-#define MAX_PITCHER_NUM (100u)
+#define MAX_PITCHER_NUM (500u)
 // 野手データファイル名
 #define BUTTER_FILE_NAME ("Batter_Open.dat")
 // 投手データファイル名

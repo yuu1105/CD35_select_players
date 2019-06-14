@@ -11,9 +11,9 @@ public class Main {
     /** 1チームの最大コスト */
     private final static Integer MAX_COST = 550;
     /** 野手データ最大人数 */
-    private final static Integer MAX_BUTTER_NUM = 100;
+    private final static Integer MAX_BUTTER_NUM = 500;
     /** 投手データ最大人数 */
-    private final static Integer MAX_PITCHER_NUM = 100;
+    private final static Integer MAX_PITCHER_NUM = 500;
     /** 野手データファイル名 */
     private final static String BUTTER_FILE_NAME = "Batter_Beginner.dat";
     /** 投手データファイル名 */
