@@ -107,7 +107,7 @@ public class Main {
 		return teamInfos;
 	}
 
-	private static final String DIR_PATH = "C:\\Users\\xhfkr\\Downloads\\試合結果詳細\\Open\\League01";
+	private static final String DIR_PATH = "C:\\Users\\xhfkr\\Downloads\\試合結果詳細\\Open\\League04";
 	private static final String TEAM_LIST_FILE_NAME = "TeamList.txt";
 	private static final String SEASON_RESULT_FILE_NAME = "season_result.txt";
 	private static final Integer INVALID_POINT = -99;
